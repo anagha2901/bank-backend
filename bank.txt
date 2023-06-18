@@ -1,0 +1,69 @@
+
+
+                      Bank -    Backend(server)
+      ----------------------------------------------------------
+
+           1. create a folder
+
+           2. generate package.json
+
+           3. create index.js file
+
+           4. .env file
+
+           5. install Packages
+                   - Express
+                   - cors
+                   - dotenv
+
+           6. create .gitignore file
+
+           7. update package.json script with start command   
+
+           8. start creating express server in index.js file
+                 - import and use dotenv package
+                 - import express 
+                 - import cors   
+                 - create express server
+                 - setup port no. for server  
+                 - use cors, json parser in server app   
+                 - run the server app in a specified port
+
+           9. create database and collection in mongodb atlas , copy the connection string
+
+          10. paste collection string in .env file with password and database name    
+
+          11. define steps to connect node app with mongodb database
+                - create db for folder, define db connection, crete a connection.js file
+                - install mongoose: npm i mongoose
+                - import mongoose in connection.js file  
+                - get connection string from .env file to connection.js file
+                     - to get connection string from .env file: process.env 
+                - connect node app with mongodb using connection string with help of mongoose     
+                - import connection.js file in index.js file
+
+          12. define schema for model/collection in db
+                - create model folder, create userSchema.js file      
+                - import mongoose userSchema.js file
+                - using mongoose, define schema for users 
+                - create a model / collection to store documents as given schema
+                     -(make sure model name should be in plural form)
+                - export model 
+
+          13. to define logic to resolve http request
+               - create a controller folder in server folder, create userController.js file
+               - import model in userController.js file   
+               - define and export logic to resolve different http client request
+
+          14. create Routes to resolve client request
+               - create Routes folder in server folder, to define Routes create router.js file 
+               - in router.js 
+                  - import express 
+                  - create routes, using express.Router() class
+                  - define routes to resolve http request 
+                      - import controller
+                  - export router
+               - import router in index.js file
+               - use router in server app  after using json parser             
+
+                  
